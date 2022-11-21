@@ -1,7 +1,6 @@
 body{
-	margin: 0; 
 	min-width: 320px; 
-	background-image: url(img/Piaynemo-West-Papua.jpg);
+	background-image: url(img/best-indones_blur.jpg);
 	background-size: cover;
 }
 header h1{
@@ -10,12 +9,15 @@ header h1{
 	font-size: 40px;
 }
 header{
-	display: inline-flex;
+	display: flex;
+	max-width: 1600px;
 	width: 100%;
 	height: 200px;
-	background-color: #aaa;
+	margin: 0 auto;
+/*	background-color: #aaa;*/
 	justify-content: space-around;
 	align-items: center;
+
 }
 header a{
 	display: flex;
@@ -31,4 +33,85 @@ nav a{
 	height: 90px;
 	margin-right: 50px;
 	align-items: center;
+}
+.hero{
+	display: flex;
+	justify-content: center;
+	width: 1200px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+}
+.hero img{
+	display: block;
+	width: 1300px;
+	height: 580px;
+	position: absolute;
+	z-index: 1;
+	border-radius: 20px;
+}
+.hero_text{
+	max-width: 1000px;
+	height: 579px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	position: relative;
+	z-index: 2;
+	color: #fff;
+
+}
+.hero1{
+font-family: 'MonteCarlo', cursive;
+font-size: 70px;
+line-height: 0px;
+
+}
+.hero2{
+	margin: 10px 0 40px 0;
+	font-family: 'Anton', sans-serif;
+	font-size: 100px;
+	line-height: 0px;
+}
+.hero3{
+	font-family: 'Montserrat', sans-serif;
+}
+.content{
+	max-width: 1400px;
+	margin: 0 auto;
+display: flex;
+justify-content: space-around;
+}
+.block{
+	width: 400px;
+	height: 266px;
+}
+.block img{
+	width: 400px;
+	height: 266px;
+	border-radius: 20px;
+	position: absolute;
+	z-index: 1;
+}
+.b_text{
+	height: 266px;
+	position: relative;
+	z-index: 2;
+	color: #fff;
+	display: flex;
+	justify-content: flex-end;
+	flex-direction: column;
+}
+#title{
+	font-family: 'MonteCarlo', cursive;
+	font-size: 30px;
+	line-height: 0px;
+	margin-left: 10px;
+}
+#sub{
+	font-family: 'Anton', sans-serif;
+	text-transform: uppercase;
+	font-size: 40px;
+	line-height: 0px;
+	margin: 5px 0 30px 10px;
 }
