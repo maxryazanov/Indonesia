@@ -12,13 +12,16 @@
 <body>
 	<header>
 		<h1>Indonesia</h1>
-		<nav>
-			<a href=""><li>Home</li></a>
-			<a href=""><li>News</li></a>
-			<a href=""><li>About</li></a>
-			<a href=""><li>Explore</li></a>
+		<nav class="nav">
+			<ul>
+				<li><a href="">Home</a></li>
+				<li><a href="">News</a></li>
+				<li><a href="">About</a></li>
+				<li><a href="">Explore</a></li>
+			</ul>
 		</nav>
-		<a href="#"><img src="./img/Searchpng.png" alt="search" width="40px" height="40px"></a>
+		<input type="text" id="searching">
+		<button class="searching_b" onclick="Visible()"><img src="./img/Searchpng.png" alt="search" width="40px" height="40px"></button>
 	</header>
 	<main>
 		<div class="hero">
@@ -56,5 +59,23 @@
 	<footer>
 		
 	</footer>
+<!-- 	<script>
+		function Visible() {
+			document.getElementById("searching").style.visibility = "visible";
+		}
+	</script> -->
+	<script>
+		var visibility = false;
+		function Visible() {  
+			if(!visibility){
+				document.getElementById("searching").style.visibility = "visible";
+				visibility = true;
+			}
+			else{
+				document.getElementById("searching").style.visibility = "hidden";
+				visibility = false;
+			}
+		}
+	</script>
 </body>
 </html>
