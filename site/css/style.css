@@ -1,0 +1,44 @@
+body{
+    background-color: #ffffff;
+}
+.b-coffee{
+	padding: 10px 0 10px 0;
+	width: 200px;
+	margin: 0 auto;
+}
+.b-coffee a{
+	display: block;
+	width: 200px;
+	height: 56px;
+}
+.first{
+	position: absolute;
+	transition: .2s all linear;
+}
+.second{
+	position: absolute;
+	opacity: 0;
+	transition: .2s all linear;
+}
+.first:hover{
+	opacity: 0;
+	transition: .2s all linear;
+}
+.second:hover{
+	opacity: 1;
+	transition: .2s all linear;
+}
+.mono{
+	margin: 0 auto;
+	background: #000;
+	width: 200px;
+	height: 56px;
+	border-radius: 12px;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	font-family: 'Inter', sans-serif;
+	font-size: 25px;
+	color: #fff;
+	text-decoration: none;
+}
